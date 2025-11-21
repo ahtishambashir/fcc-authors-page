@@ -6,16 +6,16 @@ let endingIndex = 8;
 let authorDataArr = [];
 
 fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((err) => {
-        console.error(`There was an error: ${err}`);
-    });
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.error(`There was an error: ${err}`);
+  });
 
 const displayAuthors = (authors) => {
-    authors.forEach(({ author, image, url, bio }, index) => {
-        authorContainer.innerHTML += ``;
-    });
+  authors.forEach(({ author, image, url, bio }, index) => {
+    authorContainer.innerHTML += ``;
+  });
 };
